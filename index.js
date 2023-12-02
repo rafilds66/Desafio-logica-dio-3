@@ -1,10 +1,11 @@
+//construindo a classe do Herói
 class Hero {
     constructor(name, age, type) {
         this.name = name;
         this.age =  age;
         this.type = type;
     }
-
+//Método fight para saber o ataque
     figth() {
         let atack;
         switch (this.type) {
@@ -29,12 +30,13 @@ class Hero {
     }
 }
 
-// Exemplo de uso
+// Criação do herói
 const heroMage = new Hero("Melkor", 100, "mago");
 const heroWarrior = new Hero("Ghutor", 30, "guerreiro");
 const heroMonk = new Hero("Vanir", 25, "monge");
 const heroNinja = new Hero("Hanzo", 28, "ninja");
 
+//chama o método fight dentro da classe hero
 heroMage.figth();
 heroWarrior.figth();
 heroMonk.figth();
